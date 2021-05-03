@@ -14,36 +14,14 @@
   background-color: #b3b6b7;
 }
 
-@media (min-width: 531px) {
-  .header {
-    height: 40px;
-  }
-  .logo {
-    height: 18px;
-    width: 35px;
-  }
-}
-
 .logo-menu {
   color: white;
-}
-
-@media (min-width: 531px) {
-  .logo-menu {
-    display: none;
-  }
 }
 
 .menu {
   display: flex;
   width: 40%;
   justify-content: space-evenly;
-}
-
-@media (max-width: 531px) {
-  .menu {
-    display: none;
-  }
 }
 
 .menu a {
@@ -79,13 +57,32 @@
   background-color: #a04000;
 }
 
-@media (max-width: 850px) {
+@media screen and (min-width: 531px) {
+  .header {
+    height: 40px;
+  }
+  .logo {
+    height: 18px;
+    width: 35px;
+  }
+  .logo-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
   .item-contenedor-grande {
     display: none;
   }
 }
 
-@media (min-width: 850px) {
+@media screen and (min-width: 850px) {
   .contenedor-general {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
